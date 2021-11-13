@@ -58,6 +58,8 @@ class _DetailEventPageState extends State<DetailEventPage> {
                 children: [
                   Container(
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Padding(
                           padding: const EdgeInsets.symmetric(
@@ -65,6 +67,7 @@ class _DetailEventPageState extends State<DetailEventPage> {
                           child: Container(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.start,
                               children: [
                                 Text(
                                   'ชื่อ',

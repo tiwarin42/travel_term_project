@@ -67,29 +67,33 @@ class _DetailPageState extends State<DetailPage> {
                 children: [
                   Container(
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      // mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Image.network(
-                            _pic,
-                            errorBuilder: (BuildContext context,
-                                Object exception, StackTrace? stackTrace) {
-                              return Container(
-                                  width: 160.0,
-                                  height: 160.0,
-                                  child: Center(
-                                    child: Text(
-                                      ' ไม่มีรูป',
-                                      textAlign: TextAlign.center,
-                                      style: GoogleFonts.prompt(
-                                          fontSize: 15.0,
-                                          color: Colors.red.shade200),
-                                    ),
-                                  ));
-                            },
-                            width: 200,
-                            height: 200,
-                            fit: BoxFit.fill,
+                        Center(
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Image.network(
+                              _pic,
+                              errorBuilder: (BuildContext context,
+                                  Object exception, StackTrace? stackTrace) {
+                                return Container(
+                                    width: 160.0,
+                                    height: 160.0,
+                                    child: Center(
+                                      child: Text(
+                                        ' ไม่มีรูป',
+                                        textAlign: TextAlign.center,
+                                        style: GoogleFonts.prompt(
+                                            fontSize: 15.0,
+                                            color: Colors.red.shade200),
+                                      ),
+                                    ));
+                              },
+                              width: 200,
+                              height: 200,
+                              fit: BoxFit.fill,
+                            ),
                           ),
                         ),
                         Padding(
