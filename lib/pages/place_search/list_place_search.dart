@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:geolocator/geolocator.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:travel_term_project/models/place.dart';
 import 'package:travel_term_project/pages/place_search/detail_page.dart';

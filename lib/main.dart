@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:travel_term_project/pages/event/event_page.dart';
 import 'package:travel_term_project/pages/home/home_page.dart';
-import 'package:travel_term_project/pages/place_search/list_place_search.dart';
 import 'package:travel_term_project/pages/place_search/place_search_page.dart';
 
 

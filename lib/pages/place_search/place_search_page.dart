@@ -32,11 +32,8 @@ class _PlaceSearchPageState extends State<PlaceSearchPage> {
         child: SafeArea(
             child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
-          // mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SizedBox(
-              height: 20.0,
-            ),
+            SizedBox(height: 20.0,),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Row(
@@ -47,27 +44,21 @@ class _PlaceSearchPageState extends State<PlaceSearchPage> {
                     width: 370.0,
                     child: TextField(
                       controller: _controller,
-                      style: GoogleFonts.prompt(
-                        color: Colors.teal,
-                        fontSize: 20.0,
+                      style: GoogleFonts.prompt(color: Colors.teal, fontSize: 20.0,
                       ),
                       cursorColor: Color(0xFF6FB1B4),
                       decoration: const InputDecoration(
                         enabledBorder: OutlineInputBorder(
-                          borderSide:
-                              BorderSide(color: Color(0xFF3A727F), width: 2.0),
+                          borderSide: BorderSide(color: Color(0xFF3A727F), width: 2.0),
                           borderRadius: BorderRadius.all(Radius.circular(20.0)),
                         ),
                         focusedBorder: const OutlineInputBorder(
-                          borderSide:
-                              BorderSide(color: Colors.blueGrey, width: 2.0),
+                          borderSide: BorderSide(color: Colors.blueGrey, width: 2.0),
                           borderRadius: BorderRadius.all(Radius.circular(20.0)),
                         ),
                         focusColor: Colors.teal,
                         hintText: 'ป้อนจังหวัด เช่น นนทบุรี, เชียงใหม่, ภูเก็ต',
-                        hintStyle: TextStyle(
-                          color: Colors.blueGrey,
-                          fontSize: 16.0,
+                        hintStyle: TextStyle(color: Colors.blueGrey, fontSize: 16.0,
                         ),
                       ),
                     ),
@@ -79,25 +70,17 @@ class _PlaceSearchPageState extends State<PlaceSearchPage> {
               child: Column(
                 children: [
                   ListTile(
-                    title: Text(
-                      'สถานที่ท่องเที่ยว',
-                      style: GoogleFonts.prompt(fontSize: 15.0),
-                    ),
+                    title: Text('สถานที่ท่องเที่ยว', style: GoogleFonts.prompt(fontSize: 15.0),),
                     leading: Radio(
                       value: 1,
                       groupValue: _Select,
                       onChanged: (value) {
                         setState(() {
                           _Select = value;
-                        });
-                      },
-                      activeColor: Colors.teal,
-                    ),
-                  ),
+                        });},
+                      activeColor: Colors.teal,),),
                   ListTile(
-                    title: Text(
-                      'ที่พัก',
-                      style: GoogleFonts.prompt(fontSize: 15.0),
+                    title: Text('ที่พัก', style: GoogleFonts.prompt(fontSize: 15.0),
                     ),
                     leading: Radio(
                       value: 2,
@@ -111,9 +94,7 @@ class _PlaceSearchPageState extends State<PlaceSearchPage> {
                     ),
                   ),
                   ListTile(
-                    title: Text(
-                      'ร้านอาหาร',
-                      style: GoogleFonts.prompt(fontSize: 15.0),
+                    title: Text('ร้านอาหาร', style: GoogleFonts.prompt(fontSize: 15.0),
                     ),
                     leading: Radio(
                       value: 3,
@@ -127,9 +108,7 @@ class _PlaceSearchPageState extends State<PlaceSearchPage> {
                     ),
                   ),
                   ListTile(
-                    title: Text(
-                      'ร้านค้า',
-                      style: GoogleFonts.prompt(fontSize: 15.0),
+                    title: Text('ร้านค้า', style: GoogleFonts.prompt(fontSize: 15.0),
                     ),
                     leading: Radio(
                       value: 4,
@@ -143,9 +122,7 @@ class _PlaceSearchPageState extends State<PlaceSearchPage> {
                     ),
                   ),
                   ListTile(
-                    title: Text(
-                      'อื่นๆ',
-                      style: GoogleFonts.prompt(fontSize: 15.0),
+                    title: Text('อื่นๆ', style: GoogleFonts.prompt(fontSize: 15.0),
                     ),
                     leading: Radio(
                       value: 5,
@@ -187,14 +164,9 @@ class _PlaceSearchPageState extends State<PlaceSearchPage> {
                               color: Colors.white,
                               size: 40.0,
                             ),
-                            SizedBox(
-                              width: 10.0,
-                            ),
+                            SizedBox(width: 10.0,),
                             Text(
-                              'ย้อนกลับ',
-                              style: GoogleFonts.prompt(
-                                color: Colors.white,
-                                fontSize: 23.0,
+                              'ย้อนกลับ', style: GoogleFonts.prompt(color: Colors.white, fontSize: 23.0,
                               ),
                             ),
                           ],
@@ -225,31 +197,14 @@ class _PlaceSearchPageState extends State<PlaceSearchPage> {
                             }
                             Navigator.push(
                               context,
-                              MaterialPageRoute(
-                                  builder: (context) => ListPlaceSearch(
-                                        province: _province,
-                                        type: _Type,
-                                      )),
-                            );
-                          });
-                        },
+                              MaterialPageRoute(builder: (context) => ListPlaceSearch(province: _province, type: _Type,)),);});},
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
-                          // crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Icon(
-                              Icons.search,
-                              color: Colors.white,
-                              size: 40.0,
-                            ),
-                            SizedBox(
-                              width: 10.0,
-                            ),
+                            Icon(Icons.search, color: Colors.white, size: 40.0,),
+                            SizedBox(width: 10.0,),
                             Text(
-                              'ค้นหา',
-                              style: GoogleFonts.prompt(
-                                color: Colors.white,
-                                fontSize: 23.0,
+                              'ค้นหา', style: GoogleFonts.prompt(color: Colors.white, fontSize: 23.0,
                               ),
                             ),
                           ],
