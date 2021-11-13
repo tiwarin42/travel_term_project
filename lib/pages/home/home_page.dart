@@ -5,13 +5,10 @@ import 'package:travel_term_project/pages/place_search/place_search_page.dart';
 
 class HomePage extends StatefulWidget {
   static const routeName = '/home_page';
-
   const HomePage({Key? key}) : super(key: key);
-
   @override
   _HomePageState createState() => _HomePageState();
 }
-
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
@@ -54,9 +51,7 @@ class _HomePageState extends State<HomePage> {
                         horizontal: 20.0, vertical: 5.0),
                     child: TextButton(
                       onPressed: () {
-                        Navigator.pushNamed(
-                          context,
-                          PlaceSearchPage.routeName,
+                        Navigator.pushNamed(context, PlaceSearchPage.routeName,
                         );
                       },
                       child: Row(
@@ -94,13 +89,10 @@ class _HomePageState extends State<HomePage> {
                   // width: 150.0,
                   width: 250.0,
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 20.0, vertical: 5.0),
+                    padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 5.0),
                     child: TextButton(
                       onPressed: () {
-                        Navigator.pushNamed(
-                          context,
-                          EventPage.routeName,
+                        Navigator.pushNamed(context, EventPage.routeName,
                         );
                       },
                       child: Row(

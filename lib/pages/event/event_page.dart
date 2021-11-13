@@ -57,7 +57,7 @@ class _EventPageState extends State<EventPage> {
         _location = '$_lat,$_long';
         _loading = true;
       });
-
+      print(_location);
       _futureEvent = _event();
     });
   }
