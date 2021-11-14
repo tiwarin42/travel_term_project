@@ -3,12 +3,9 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:travel_term_project/services/api.dart';
 
 class DetailPage extends StatefulWidget {
-  final path;
-  final place_id;
-
+  final path,place_id;
   const DetailPage({Key? key, required this.path, required this.place_id})
       : super(key: key);
-
   @override
   _DetailPageState createState() => _DetailPageState();
 }
@@ -25,9 +22,7 @@ class _DetailPageState extends State<DetailPage> {
   }
 
   void _placeDetail() async {
-    Map<String, dynamic> map =
-        await Api().fetch('${widget.path}/${widget.place_id}');
-
+    Map<String, dynamic> map = await Api().fetch('${widget.path}/${widget.place_id}');
     setState(() {
       _name = map["place_name"];
       _information = map["place_information"]["introduction"];
@@ -49,7 +44,9 @@ class _DetailPageState extends State<DetailPage> {
           backgroundColor: Color(0xFF45AAB4),
           title: Text(
             'รายละเอียดสถานที่',
-            style: GoogleFonts.prompt(fontSize: 20.0),
+            style: GoogleFonts.prompt(
+                fontSize: 20.0
+            ),
           ),
         ),
         body: _loading == false
@@ -68,7 +65,6 @@ class _DetailPageState extends State<DetailPage> {
                   Container(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      // mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Center(
                           child: Padding(
@@ -101,7 +97,6 @@ class _DetailPageState extends State<DetailPage> {
                               vertical: 10.0, horizontal: 15.0),
                           child: Container(
                             child: Column(
-                              // mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(

@@ -54,7 +54,6 @@ class _ListPlaceSearchState extends State<ListPlaceSearch> {
                 child: CircularProgressIndicator(color: Color(0xFF64A2AD)),
               );
             }
-
             if (snapshot.hasData) {
               var placeList = snapshot.data;
               return ListView.builder(
@@ -88,7 +87,7 @@ class _ListPlaceSearchState extends State<ListPlaceSearch> {
                                       path: _category,
                                       place_id: placeItem.place_id,
                                     )));
-                      },
+                        },
                       child: Row(
                         children: <Widget>[
                           Image.network(

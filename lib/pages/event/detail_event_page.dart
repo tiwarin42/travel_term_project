@@ -71,20 +71,16 @@ class _DetailEventPageState extends State<DetailEventPage> {
                               children: [
                                 Text(
                                   'ชื่อ',
-                                  style: GoogleFonts.prompt(
-                                      fontSize: 20.0,
+                                  style: GoogleFonts.prompt(fontSize: 20.0,
                                       fontWeight: FontWeight.bold),
                                 ),
                                 Text(
                                   '$_name',
-                                  style: GoogleFonts.prompt(
-                                      fontSize: 18.0,
+                                  style: GoogleFonts.prompt(fontSize: 18.0,
                                       color: Colors.grey.shade600,
                                       fontWeight: FontWeight.w600),
                                 ),
-                                SizedBox(
-                                  height: 20.0,
-                                ),
+                                SizedBox(height: 20.0,),
                                 Text(
                                   'ระยะเวลา',
                                   style: GoogleFonts.prompt(
@@ -93,24 +89,19 @@ class _DetailEventPageState extends State<DetailEventPage> {
                                 ),
                                 Text(
                                   '$_period_date',
-                                  style: GoogleFonts.prompt(
-                                      fontSize: 18.0,
+                                  style: GoogleFonts.prompt(fontSize: 18.0,
                                       color: Colors.grey.shade600,
                                       fontWeight: FontWeight.w600),
                                 ),
-                                SizedBox(
-                                  height: 20.0,
-                                ),
+                                SizedBox(height: 20.0,),
                                 Text(
                                   'รายละเอียด',
-                                  style: GoogleFonts.prompt(
-                                      fontSize: 20.0,
+                                  style: GoogleFonts.prompt(fontSize: 20.0,
                                       fontWeight: FontWeight.bold),
                                 ),
                                 Text(
                                   '${_detail.replaceAll(RegExp(r'[<p>\</p>\&nbs;]'), '')}',
-                                  style: GoogleFonts.prompt(
-                                      fontSize: 17.0,
+                                  style: GoogleFonts.prompt(fontSize: 17.0,
                                       fontWeight: FontWeight.w600,
                                       color: Colors.grey.shade600),
                                 ),
